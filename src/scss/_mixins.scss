@@ -1,0 +1,36 @@
+// @mixin font-size-family($size, $family: $base-font-family) {
+//    font: {
+//       size: #{$size}px;
+//       family: $family;
+//    }
+// }
+
+// @mixin tablet {
+//    @media screen and (max-width: #{$breakpoint-tablet}) {
+//      @content;
+//    }
+//  }
+
+@mixin desktop {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile-sm {
+  @media screen and (max-width: 550px) {
+    @content;
+  }
+}
